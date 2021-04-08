@@ -1,0 +1,26 @@
+<script>
+//<![CDATA[
+setTimeout(function() { // START Zeitverzögerung, damit onload sicher abgeschlossen ist
+   require(['jquery'], function($) {  // START Nachladen von jQuery mit require
+   //
+   if ( window.location.pathname == '/course/edit.php') {
+      $('#page-course-edit #page-navbar').append('<a id="coursecreation_change_block" style="padding-left:5px; margin-top:4px; float:left;">  <label style="border:solid 1px #bbb; padding:5px; font-size: 12px; background-color:#eee;"> <input id="coursecreation_checkbox" type="checkbox" data-on="Aktivieren" data-off="Standard">Optionen reduzieren</label></a>');
+
+    function register_checkbox(body_class, text) {
+        checkbox = body_class + '_checkbox';
+        $('#' + checkbox).change(function() {
+            if ($(this).prop('checked')) {
+                $('body').addClass(body_class);
+            } 
+            else {
+                $('body').removeClass(body_class);
+            }
+        });
+    }
+    register_checkbox("coursecreation", " Optionen reduzieren");
+}
+
+    }); // END require
+}, 500); // END Zeitverzögerung
+//]]>
+</script>
