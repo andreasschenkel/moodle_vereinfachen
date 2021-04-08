@@ -1,0 +1,26 @@
+<style>
+/* Kurserstellung vereinfachen */
+.coursecreation #fitem_id_visible,
+.coursecreation #fitem_id_idnumber,
+
+.coursecreation #id_descriptionhdr,
+.coursecreation #id_appearancehdr,
+.coursecreation #id_filehdr,
+.coursecreation #id_completionhdr,
+.coursecreation #id_groups,
+.coursecreation #id_rolerenaming,
+.coursecreation #id_tagshdr,
+.coursecreation #id_competenciessection,
+
+.coursecreation #id_availibilityhdr, 
+.coursecreation #id_rsshdr,
+.coursecreation #id_modstandardratings,
+.coursecreation #id_modstandardelshdr,
+.coursecreation #id_availabilityconditionsheader
+{
+    display: none;
+}
+#page-course-edit #page-navbar nav {
+    float: left;
+}
+</style>
